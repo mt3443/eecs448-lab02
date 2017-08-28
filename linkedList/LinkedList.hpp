@@ -109,6 +109,7 @@ bool LinkedList<T>::removeBack()
 	
 	if(m_size == 1) {
 		delete m_front;
+		m_size--;
 		return true;
 	}
 	
@@ -121,6 +122,7 @@ bool LinkedList<T>::removeBack()
 	}
 	
 	delete lastNode;
+	m_size--;
 	
 	return true;
 }	
